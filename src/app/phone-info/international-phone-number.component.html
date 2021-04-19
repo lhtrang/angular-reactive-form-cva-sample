@@ -1,0 +1,12 @@
+<div>
+  <span>+</span>
+  <input class="country-code"
+         [disabled]="disabled"
+         [value]="value?.countryCode"
+         (keyup)="onCountryCodeChange($event)"
+         (focus)="markAsTouched()"/>
+  <input [disabled]="disabled"
+         [value]="value?.phoneNumber"
+         (keyup)="onPhoneNumberChange($event)"
+         (focus)="markAsTouched()"/>
+</div>
